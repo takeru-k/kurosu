@@ -1,0 +1,39 @@
+
+
+/*================================
+	色設定
+=================================*/
+$color-main: #164194;
+$color-sub: #71AFD1;
+$color-bg: #F3F8FB;
+$color-accent: #46c4db;
+$color-button: #337ab7;
+
+$font-mincho: 
+	YuMincho,    /* Mac用 */
+	'Yu Mincho', /* Windows用 */
+	serif;
+
+/*================================
+	全体共通
+=================================*/
+body{
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
+  font-weight: 500;
+  color: #333;
+  line-height: 1.75;
+}
+
+a{
+  color: inherit;
+  cursor:pointer;
+  text-decoration: none;
+
+  &:hover{
+    opacity: .6;
+  }
+}
+
+li{
+  list-style: none;
+}

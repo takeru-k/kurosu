@@ -1,0 +1,32 @@
+.c-button{
+  border: 1px solid $color-sub;
+  color: $color-sub;
+  background: #fff;
+  padding: 16px 16px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin-top: 24px;
+
+  a{
+    text-decoration: none;
+
+    &:after{
+      position: absolute;
+      content: "";
+      width: 32px;
+      height: 32px;
+      background: url(../images/common/icon-arrow-btn.png) no-repeat center
+        center/contain;
+      right: 24px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+@media (min-width: 1024px){
+  .c-button{
+    width: 320px;
+  }
+}

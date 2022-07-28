@@ -1,0 +1,63 @@
+.c-topHeading{
+  span{
+    color: $color-main;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 12px;
+
+    &:after{
+      content: '';
+      height: 1px;
+      width: 32%;
+      background: $color-main;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  h2{
+    margin-top: 24px;
+    font-size: 20px;
+    font-family: $font-mincho;
+  }
+
+  p{
+    margin-top: 16px;
+  }
+}
+
+.c-topHeading-center{
+  text-align: center;
+  span{
+    color: $color-main;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 12px;
+
+    &:after{
+      content: '';
+      height: 1px;
+      width: 32%;
+      background: $color-main;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  h2{
+    margin-top: 24px;
+    font-size: 20px;
+    font-family: $font-mincho;
+  }
+
+  
+}

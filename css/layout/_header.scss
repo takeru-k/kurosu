@@ -1,0 +1,210 @@
+/*================================
+	header
+=================================*/
+.l-header {
+  height: 60px;
+  width: 100%;
+  z-index: 100;
+  position: relative;
+}
+
+
+.l-header__logo {
+  width: 160px;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  transform: translateY(-50%);
+  z-index: 1000;
+
+  a {
+    position: relative;
+  }
+}
+
+.l-header__menu{
+  li{
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.l-header__contact{
+  font-family: $font-mincho;
+}
+
+.l-header__number{
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  position: relative;
+}
+
+.l-header__hour {
+  display: block;
+  font-size: 14px;
+}
+
+
+
+@media not all and (min-width: 1024px) {
+  /* メニューのスタイリング */
+  .l-header__inner {
+  padding: 8px 16px;
+  margin: 0 auto;
+}
+
+
+  .l-header__nav {
+  position: fixed;
+  right: -100%; /* メニューの位置マイナス指定で画面外に */
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  transition: 0.3s;
+}
+
+  .l-header__menu {
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+
+    li {
+      display: flex;
+      align-items: center;
+      padding: 32px 24px;
+      border-bottom: 1px solid #ececec;
+      letter-spacing: 0.1em;
+      font-size: 14px;
+      position: relative;
+
+      &:first-child {
+        border-top: 1px solid #ececec;
+      }
+    }
+
+    a {
+      position: relative;
+      padding-right: 24px;
+
+      &:before {
+        position: absolute;
+        content: "";
+        width: 16px;
+        height: 16px;
+        background: url(../images/common/icon-arrow.svg) no-repeat center
+          center/cover;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &:hover {
+        color: $color-main;
+      }
+    }
+  }
+
+  .l-header__nav.open {
+    position: absolute;
+    right: 0; /* メニューオープン時位置0にして画面内に */
+    z-index: 100;
+    top: 60px;
+  }
+
+  .l-header__contact {
+    margin: 32px 16px;
+    padding: 16px;
+    display: block;
+    border: 1px solid $color-main;
+    color: $color-main;
+    text-align: center;
+  }
+
+  .l-header__number {
+    
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: 24px;
+      height: 24px;
+      background: url(../images/common/icon-tel.png) no-repeat center
+        center/cover;
+      left: -32px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  
+}
+
+/* 1024px以上のスタイリング */
+@media (min-width: 1024px){
+  .l-header{
+    height: 80px;
+  }
+  .l-header__logo{
+    width: 240px;
+  }
+
+  .l-header__nav {
+    display: flex;
+    position: static;
+    justify-content: flex-end;
+    height: 80px;
+  }
+
+  .l-header__menu {
+    /* メニューを横に */
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    background: none;
+
+    li {
+      color: #333;
+      padding: 16px;
+      border-bottom: none;
+      font-size: 14px;
+
+      &:hover{
+        color: $color-main;
+      }
+    }
+  }
+
+  .l-header__contact{
+    background: $color-sub;
+    color: #fff;
+    text-align: center;
+
+    padding: 12px 24px 12px 48px;
+  }
+
+  .l-header__number{
+    font-size: 20px;
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 16px;
+      background: url(../images/common/icon-telW.png) no-repeat center
+        center/cover;
+      left: -24px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .l-header__hour{
+    font-size: 12px;
+  }
+}
+
+.current-menu-item {
+  color: $color-main;
+}

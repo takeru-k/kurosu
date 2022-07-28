@@ -1,0 +1,41 @@
+.p-mainVisual{
+  height: 50vh;
+  max-height: 640px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+  @media (min-width: 1024px){
+    height: 80vh;
+  }
+}
+
+.p-mainVisual__text{
+  margin-right: auto;
+  padding-left: 6%;
+  
+
+  h1{
+    font-family: $font-mincho;
+    font-weight: normal;
+    color: $color-main;
+    text-shadow: 1px 1px 1px #e5e5e5;
+  }
+
+  p{
+    color: #fff;
+    font-size: 14px;
+    color: $color-sub;
+    padding-left: 6px;
+  }
+}
+
+@media (min-width: 768px){
+  .p-mainVisual__text{
+    h1{
+      font-size: 48px;
+    }
+  }
+}
