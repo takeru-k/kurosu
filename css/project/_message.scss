@@ -1,0 +1,29 @@
+.p-message{
+  max-width: 640px;
+  margin: 0 auto;
+
+  img{
+    max-height: 390px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.p-message__info{
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.p-message__text{
+  margin-top: 40px;
+
+  p{
+    line-height: 2;
+    margin-bottom: 40px;
+  }
+}
+
+.p-message__sign{
+  text-align: right;
+  font-weight: bold;
+}

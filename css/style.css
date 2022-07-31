@@ -364,6 +364,57 @@ li {
   margin: 0 auto;
 }
 
+.l-pageHeader {
+  padding: 40px 0 24px;
+  text-align: center;
+  background: url(../images/common/page-header.jpg) no-repeat center center/cover;
+}
+.l-pageHeader h1 {
+  color: #164194;
+  font-family: YuMincho, "Yu Mincho", serif;
+  letter-spacing: 4px;
+  line-height: 1.2;
+}
+.l-pageHeader span {
+  display: block;
+  color: #71AFD1;
+}
+
+@media (min-width: 1024px) {
+  .l-pageHeader {
+    padding: 56px 0 48px;
+  }
+  .l-pageHeader span {
+    margin-top: 12px;
+  }
+}
+.c-section {
+  padding: 48px 0 64px;
+}
+
+.c-section + .c-section {
+  padding-top: 0;
+}
+
+.c-section__title {
+  text-align: center;
+  font-family: YuMincho, "Yu Mincho", serif;
+  color: #164194;
+  position: relative;
+  padding-bottom: 16px;
+  margin-bottom: 32px;
+}
+.c-section__title:after {
+  content: "";
+  height: 1px;
+  width: 32px;
+  background: #164194;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /* ハンバーガーメニュー */
 .c-hamburger {
   position: absolute;
@@ -519,6 +570,101 @@ li {
     width: 320px;
   }
 }
+@media not all and (min-width: 1024px) {
+  .c-table tr {
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+  }
+  .c-table th {
+    display: block;
+    padding: 20px 12px 8px;
+    font-size: 18px;
+  }
+  .c-table td {
+    display: block;
+    padding: 8px 0 20px 12px;
+  }
+}
+.c-table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.c-table th {
+  text-align: left;
+  color: #71AFD1;
+}
+.c-table th span {
+  font-size: 14px;
+}
+.c-table td span {
+  font-size: 14px;
+}
+
+@media (min-width: 1024px) {
+  .c-table {
+    margin-top: 48px;
+  }
+  .c-table th {
+    padding: 24px;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    width: 200px;
+    vertical-align: top;
+  }
+  .c-table td {
+    padding: 24px;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+  }
+}
+.c-table__list li {
+  position: relative;
+  padding-left: 12px;
+  font-size: 14px;
+  margin-top: 4px;
+}
+.c-table__list li:before {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  content: "";
+  width: 4px;
+  height: 4px;
+  margin-right: 8px;
+  display: inline-block;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+.-mb {
+  margin-bottom: 16px;
+}
+
+.c-sidebar {
+  grid-area: sidebar;
+}
+
+.c-sidebar__wrapper {
+  margin-bottom: 40px;
+}
+.c-sidebar__wrapper h3 {
+  color: #fff;
+  background: #164194;
+  font-size: 18px;
+  line-height: 2.4;
+  text-align: center;
+}
+
+.c-sidebar__nav li {
+  padding: 12px 4px 12px 12px;
+  margin-left: 8px;
+  border-bottom: 1px dashed #ececec;
+  background: url(../images/common/icon-sidebar.svg) left center no-repeat;
+}
+
 .p-mainVisual {
   height: 50vh;
   max-height: 640px;
@@ -931,5 +1077,241 @@ li {
     width: 40%;
     max-width: 240px;
     margin: 0 24px;
+  }
+}
+.p-message {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.p-message img {
+  max-height: 390px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.p-message__info {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.p-message__text {
+  margin-top: 40px;
+}
+.p-message__text p {
+  line-height: 2;
+  margin-bottom: 40px;
+}
+
+.p-message__sign {
+  text-align: right;
+  font-weight: bold;
+}
+
+.p-service__wrapper {
+  max-width: 1200px;
+  padding: 40px 6%;
+  margin: 0 auto;
+}
+
+.p-service {
+  grid-area: content;
+}
+
+.p-service__item {
+  margin-bottom: 64px;
+}
+.p-service__item h2 {
+  font-size: 20px;
+  border-left: 8px solid #164194;
+  padding-left: 8px;
+}
+
+.p-service__text {
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+.p-service__text p {
+  margin-bottom: 8px;
+}
+
+.p-service__list {
+  background: #F3F8FB;
+  padding: 24px;
+}
+.p-service__list h3 {
+  font-size: 16px;
+  color: #185E9C;
+  margin-bottom: 12px;
+}
+.p-service__list li {
+  padding-left: 1em;
+  text-indent: -1em;
+  margin-bottom: 8px;
+}
+.p-service__list li:before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #164194;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 0.5em;
+  margin-top: -4px;
+}
+
+.c-sidebar {
+  grid-area: sidebar;
+}
+
+@media (min-width: 768px) {
+  .p-service__wrapper {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "sidebar content";
+  }
+}
+.p-contract__heading span {
+  color: #71AFD1;
+  font-family: "Source Serif Pro", serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1px;
+  position: relative;
+  padding-bottom: 12px;
+}
+.p-contract__heading span:after {
+  content: "";
+  height: 1px;
+  width: 32%;
+  background: #71AFD1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.p-contract__heading h2 {
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: YuMincho, "Yu Mincho", serif;
+}
+.p-contract__heading p {
+  margin-top: 16px;
+}
+
+.p-contract__desc {
+  grid-area: desc;
+}
+
+.p-contract__img {
+  grid-area: img;
+}
+
+.p-contract__item {
+  margin-bottom: 64px;
+}
+
+.p-contract__text {
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+.p-contract__text p {
+  margin-bottom: 8px;
+}
+
+.p-contract__list {
+  background: #F3F8FB;
+  padding: 24px;
+}
+.p-contract__list h3 {
+  font-size: 16px;
+  color: #185E9C;
+  margin-bottom: 12px;
+}
+.p-contract__list li {
+  padding-left: 1em;
+  text-indent: -1em;
+  margin-bottom: 8px;
+}
+.p-contract__list li:before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #164194;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 0.5em;
+  margin-top: -4px;
+}
+
+@media (min-width: 768px) {
+  .p-contract__item {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "desc img";
+  }
+}
+.p-contact__wrapper {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.p-contact__wrapper p {
+  margin-bottom: 16px;
+}
+
+.p-contact__info {
+  text-align: center;
+  font-family: YuMincho, "Yu Mincho", serif;
+  line-height: 1.4;
+  background: #F3F8FB;
+  padding: 24px 0;
+}
+.p-contact__info a {
+  display: inline-block;
+  font-size: 32px;
+  color: #164194;
+  letter-spacing: 1px;
+  position: relative;
+}
+.p-contact__info a:before {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(../images/common/icon-tel.png) no-repeat center center/cover;
+  left: -32px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.p-contact__info span {
+  font-size: 14px;
+  display: block;
+}
+
+.-mail a {
+  font-size: 32px;
+}
+.-mail a:before {
+  width: 24px;
+  height: 24px;
+  background: url(../images/common/icon-mail.svg) no-repeat center center/cover;
+}
+
+.p-contact__mail {
+  margin-top: 16px;
+}
+.p-contact__mail ul {
+  margin: 20px 0;
+}
+
+@media (min-width: 768px) {
+  .p-contact__intro {
+    text-align: center;
+  }
+  .p-contact__mail {
+    margin-top: 32px;
   }
 }/*# sourceMappingURL=style.css.map */

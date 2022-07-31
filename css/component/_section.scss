@@ -1,0 +1,27 @@
+.c-section{
+  padding: 48px 0 64px;
+}
+
+.c-section + .c-section{
+  padding-top: 0;
+}
+
+.c-section__title{
+  text-align: center;
+  font-family: $font-mincho;
+  color: $color-main;
+  position: relative;
+  padding-bottom: 16px;
+  margin-bottom: 32px;
+
+  &:after{
+    content: "";
+    height: 1px;
+    width: 32px;
+    background: #164194;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

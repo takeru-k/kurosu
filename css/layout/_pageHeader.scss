@@ -1,0 +1,30 @@
+.l-pageHeader{
+  padding: 40px 0 24px;
+  text-align: center;
+  background: url(../images/common/page-header.jpg) no-repeat center center/cover;
+  
+
+  h1{
+    color: $color-main;
+    font-family: $font-mincho;
+    letter-spacing: 4px;
+    line-height: 1.2;
+  }
+
+  span{
+    display: block;
+    color: $color-sub;
+    
+  }
+
+}
+
+@media (min-width: 1024px){
+  .l-pageHeader{
+    padding: 56px 0 48px;
+
+    span{
+      margin-top: 12px;
+    }
+  }
+}

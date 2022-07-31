@@ -4,11 +4,14 @@
 @import "layout/_header.scss";
 @import "layout/_footer.scss";
 @import "layout/_inner.scss";
+@import "layout/_pageHeader.scss";
 
 @import "component/_section.scss";
 @import "component/_hamburger.scss";
 @import "component/_topHeading.scss";
 @import "component/_button.scss";
+@import "component/_table.scss";
+@import "component/_sidebar.scss";
 
 @import "project/_mainVisual.scss";
 @import "project/_topAbout.scss";
@@ -16,4 +19,8 @@
 @import "project/_topContract.scss";
 @import "project/_topMessage.scss";
 @import "project/_cta.scss";
+@import "project/_message.scss";
+@import "project/_service.scss";
+@import "project/_contract.scss";
+@import "project/_contact.scss";
 
