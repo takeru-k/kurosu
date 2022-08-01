@@ -1,3 +1,6 @@
+.p-contract{
+  padding: 40px 0 64px;
+}
 .p-contract__heading{
   span{
     color: $color-sub;
@@ -38,8 +41,8 @@
   grid-area: img;
 }
 
-.p-contract__item{
-  margin-bottom: 64px;
+.p-contract__item + .p-contract__item{
+  padding-top: 48px;
 }
 
 .p-contract__text{
@@ -58,6 +61,10 @@
     font-size: 16px;
     color: #185E9C;
     margin-bottom: 12px;
+
+    span{
+      font-size: 14px;
+    }
   }
 
   li{
@@ -77,16 +84,48 @@
       margin-top: -4px;
     }
   }
+
+  table{
+    width: 100%;
+    border-spacing: 0;
+  }
+
+  th, td{
+    border-bottom: 1px solid #e5e5e5;
+    padding: 8px 0;
+    width: 50%;
+    text-align: center;
+    font-size: 14px;
+  }
 }
 
 
 
 @media (min-width: 768px){
+  .p-contract{
+    padding: 88px 0;
+  }
+
+  .p-contract__item + .p-contract__item{
+  padding-top: 64px;
+}
+
   .p-contract__item{
     display: grid;
     gap: 40px;
-    grid-template-columns:50% 50%;
+    justify-content: space-evenly;
+    grid-template-columns:44% 50%;
     grid-template-areas:
-      "desc img"
+      "desc img";
+      
+    &:not(:first-child){
+      align-items: center;
+    }
+  }
+
+  .p-contract__list{
+    table{
+      width: 88%;
+    }
   }
   }
