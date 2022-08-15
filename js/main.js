@@ -11,8 +11,8 @@ var ww = window.innerWidth || document.documentElement.clientWidth || 0;
 					 { src: 'images/top/mv3.jpg' }];
 		} else {
 			var srcBgArray = [{ src: 'images/top/mv_sp.jpg' }, //スマホでスライドする画像を配列で設定
-    				 { src: 'images/top/mv2_sp.jpg' },
-					 { src: 'images/top/mv3_sp.jpg' }];
+    				 { src: 'images/top/mv2.jpg' },
+					 { src: 'images/top/mv3.jpg' }];
 			
 		}
 		$('#slider').vegas({ 
