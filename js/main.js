@@ -9,12 +9,8 @@ var ww = window.innerWidth || document.documentElement.clientWidth || 0;
 			var srcBgArray = [{ src: 'images/top/mv.jpg' }, //PCでスライドする画像を配列で設定
     				 { src: 'images/top/mv2.jpg' },
 					 { src: 'images/top/mv3.jpg' }];
-		} else {
-			var srcBgArray = [{ src: 'images/top/mv_sp.jpg' }, //スマホでスライドする画像を配列で設定
-    				 { src: 'images/top/mv2.jpg' },
-					 { src: 'images/top/mv3.jpg' }];
-			
-		}
+		} 
+		
 		$('#slider').vegas({ 
 			slides: srcBgArray,
 			delay: 5000, 
