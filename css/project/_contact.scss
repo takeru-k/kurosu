@@ -40,7 +40,7 @@
 
 .-mail{
   a{
-    font-size: 32px;
+    font-size: 24px;
 
 
     &:before{
@@ -66,6 +66,12 @@
 
       text-align: center;
     
+  }
+
+  .-mail{
+    a{
+      font-size: 32px;
+    }
   }
 
   .p-contact__mail{

@@ -8,7 +8,7 @@
 
 .p-topContract__item{
   background: linear-gradient(180deg, #fff 0%, #fff 20%, #71AFD1 20%, #71AFD1 100%);
-  padding: 0 6%;
+  padding: 0 6% 24px;
   color: #fff;
   margin-bottom: 24px;
 
@@ -79,5 +79,39 @@ h3{
 
   .p-topContract__button{
     width: 100%;
+    max-width: 240px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.p-topContract__button{
+  border: 1px solid $color-sub;
+  color: $color-sub;
+  background: #fff;
+  padding: 16px 16px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin-top: 24px;
+
+  a{
+    text-decoration: none;
+
+    @media (min-width: 1024px){
+      &:after{
+      position: absolute;
+      content: "";
+      width: 32px;
+      height: 32px;
+      background: url(../images/common/icon-arrow-btn.png) no-repeat center
+        center/contain;
+      right: 24px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    }
+
+    
   }
 }

@@ -15,16 +15,28 @@
   li{
     color: #fff;
     background: $color-sub;
-    padding: 16px 8px 16px 12px;
+    padding: 16px 8px 16px 24px;
     width: 48%;
     font-size: 14px;
     margin-bottom: 16px;
 
+    a{
+      position: relative;
+    
     &:before{
-        display: inline-block;
-    margin-right: 4px;
-    content: '-';
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 16px;
+      background: url(../images/common/icon-arrowW.svg) no-repeat center
+        center/cover;
+      left: -16px;
+      top: 50%;
+      transform: translateY(-50%);
     }
+
+    }
+    
   }
 }
 
@@ -67,7 +79,7 @@
 
     li{
       width: 33%;
-      padding: 16px;
+      padding: 16px 16px 16px 32px;
       
       }
     }

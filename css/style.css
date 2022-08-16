@@ -800,15 +800,23 @@ li {
 .p-topService__list li {
   color: #fff;
   background: #71AFD1;
-  padding: 16px 8px 16px 12px;
+  padding: 16px 8px 16px 24px;
   width: 48%;
   font-size: 14px;
   margin-bottom: 16px;
 }
-.p-topService__list li:before {
-  display: inline-block;
-  margin-right: 4px;
-  content: "-";
+.p-topService__list li a {
+  position: relative;
+}
+.p-topService__list li a:before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url(../images/common/icon-arrowW.svg) no-repeat center center/cover;
+  left: -16px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 @media (min-width: 1024px) {
@@ -842,7 +850,7 @@ li {
   }
   .p-topService__list li {
     width: 33%;
-    padding: 16px;
+    padding: 16px 16px 16px 32px;
   }
 }
 .p-topContract {
@@ -855,7 +863,7 @@ li {
 
 .p-topContract__item {
   background: linear-gradient(180deg, #fff 0%, #fff 20%, #71AFD1 20%, #71AFD1 100%);
-  padding: 0 6%;
+  padding: 0 6% 24px;
   color: #fff;
   margin-bottom: 24px;
 }
@@ -916,8 +924,37 @@ li {
   }
   .p-topContract__button {
     width: 100%;
+    max-width: 240px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
+.p-topContract__button {
+  border: 1px solid #71AFD1;
+  color: #71AFD1;
+  background: #fff;
+  padding: 16px 16px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin-top: 24px;
+}
+.p-topContract__button a {
+  text-decoration: none;
+}
+@media (min-width: 1024px) {
+  .p-topContract__button a:after {
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 32px;
+    background: url(../images/common/icon-arrow-btn.png) no-repeat center center/contain;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
 .p-topMessage {
   margin: 48px 0 24px;
   padding-bottom: 40px;
@@ -1331,7 +1368,7 @@ li {
 }
 
 .-mail a {
-  font-size: 32px;
+  font-size: 24px;
 }
 .-mail a:before {
   width: 24px;
@@ -1349,6 +1386,9 @@ li {
 @media (min-width: 768px) {
   .p-contact__intro {
     text-align: center;
+  }
+  .-mail a {
+    font-size: 32px;
   }
   .p-contact__mail {
     margin-top: 32px;
