@@ -115,3 +115,21 @@ h3{
     
   }
 }
+
+.sample{
+  .p-topContract__item{
+  background: #71AFD1;
+  padding: 24px 6% 24px;
+  color: #fff;
+  margin-bottom: 24px;
+
+  &:nth-child(2n){
+    background: #185E9C;
+  }
+}
+}
+
+.-center{
+  margin-right: auto;
+  margin-left: auto;
+}
