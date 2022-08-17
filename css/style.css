@@ -749,9 +749,9 @@ li {
     display: block;
     position: absolute;
     z-index: -1;
-    top: 0;
+    top: 24px;
     right: 0;
-    width: 80vw;
+    width: 64vw;
     height: 100%;
     background: #F3F8FB;
   }
@@ -956,10 +956,11 @@ li {
 }
 
 .sample .p-topContract__item {
+  text-align: center;
   background: #71AFD1;
   padding: 24px 6% 24px;
   color: #fff;
-  margin-bottom: 24px;
+  margin-bottom: 0 !important;
 }
 .sample .p-topContract__item:nth-child(2n) {
   background: #185E9C;
@@ -968,6 +969,7 @@ li {
 .-center {
   margin-right: auto;
   margin-left: auto;
+  margin-top: 40px;
 }
 
 .p-topMessage {
@@ -1012,7 +1014,7 @@ li {
     z-index: -1;
     top: 0;
     right: 0;
-    width: 80vw;
+    width: 64vw;
     height: 100%;
     background: #F3F8FB;
   }
