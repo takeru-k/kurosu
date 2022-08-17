@@ -1330,6 +1330,18 @@ li {
     width: 88%;
   }
 }
+.p-contract2 {
+  padding: 40px 0;
+  max-width: 720px;
+  margin: 0 auto;
+}
+.p-contract2 .p-contract__heading {
+  margin-top: 40px;
+}
+.p-contract2 .p-contract__desc {
+  margin-bottom: 40px;
+}
+
 .p-contact__wrapper {
   max-width: 640px;
   margin: 0 auto;
