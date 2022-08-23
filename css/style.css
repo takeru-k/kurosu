@@ -549,6 +549,7 @@ li {
   text-align: center;
   position: relative;
   width: 100%;
+  max-width: 320px;
   margin-top: 24px;
 }
 .c-button a {
@@ -862,13 +863,14 @@ li {
 }
 
 .p-topContract__item {
-  background: linear-gradient(180deg, #fff 0%, #fff 20%, #71AFD1 20%, #71AFD1 100%);
-  padding: 0 6% 24px;
+  text-align: center;
+  background: #71AFD1;
+  padding: 24px 6% 24px;
   color: #fff;
-  margin-bottom: 24px;
+  margin-bottom: 0 !important;
 }
 .p-topContract__item:nth-child(2n) {
-  background: linear-gradient(180deg, #fff 0%, #fff 20%, #185E9C 20%, #185E9C 100%);
+  background: #185E9C;
 }
 
 .p-topContract__text {
@@ -892,6 +894,11 @@ li {
 }
 .p-topContract__text p {
   margin-top: 16px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .p-topContract__text p br {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -953,17 +960,6 @@ li {
     top: 50%;
     transform: translateY(-50%);
   }
-}
-
-.sample .p-topContract__item {
-  text-align: center;
-  background: #71AFD1;
-  padding: 24px 6% 24px;
-  color: #fff;
-  margin-bottom: 0 !important;
-}
-.sample .p-topContract__item:nth-child(2n) {
-  background: #185E9C;
 }
 
 .-center {
@@ -1128,7 +1124,10 @@ li {
   .p-cta__items {
     display: flex;
     justify-content: center;
-    margin-top: 48px;
+    margin-top: 32px;
+  }
+  .p-cta__items span {
+    margin-top: 12px;
   }
   .p-cta__tel {
     width: 40%;
@@ -1288,7 +1287,6 @@ li {
 
 .p-contract__list {
   background: #F3F8FB;
-  padding: 24px;
 }
 .p-contract__list h3 {
   font-size: 16px;
@@ -1317,6 +1315,7 @@ li {
 .p-contract__list table {
   width: 100%;
   border-spacing: 0;
+  margin-bottom: 16px;
 }
 .p-contract__list th, .p-contract__list td {
   border-bottom: 1px solid #e5e5e5;
@@ -1347,18 +1346,6 @@ li {
     width: 88%;
   }
 }
-.p-contract2 {
-  padding: 40px 0;
-  max-width: 720px;
-  margin: 0 auto;
-}
-.p-contract2 .p-contract__heading {
-  margin-top: 40px;
-}
-.p-contract2 .p-contract__desc {
-  margin-bottom: 40px;
-}
-
 .p-contact__wrapper {
   max-width: 640px;
   margin: 0 auto;

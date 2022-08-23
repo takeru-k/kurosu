@@ -1,6 +1,7 @@
 .p-contract{
   padding: 40px 0 64px;
 }
+
 .p-contract__heading{
   span{
     color: $color-sub;
@@ -55,7 +56,6 @@
 
 .p-contract__list{
   background: $color-bg;
-  padding: 24px;
 
   h3{
     font-size: 16px;
@@ -88,6 +88,7 @@
   table{
     width: 100%;
     border-spacing: 0;
+    margin-bottom: 16px;
   }
 
   th, td{
@@ -130,16 +131,3 @@
   }
   }
 
-.p-contract2{
-  padding: 40px 0;
-  max-width: 720px;
-  margin: 0 auto;
-
-  .p-contract__heading{
-    margin-top: 40px;
-  }
-
-  .p-contract__desc{
-    margin-bottom: 40px;
-  }
-}
